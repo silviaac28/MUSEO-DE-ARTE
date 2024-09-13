@@ -13,8 +13,8 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #f0f0f0; /* Gris clarito */
-    color: #333;
+    background-color: #2e2f33; /* Gris clarito */
+    color: #f7f7f7;
     padding: 15px 40px; /* Más ancho */
     position: fixed;
     width: 100%;
@@ -25,16 +25,19 @@ header {
 
 .navbar-left {
     font-size: 1.5em;
+    font-style:oblique;
 }
 
 .navbar-right {
     display: flex;
-    gap: 20px;
+    gap: 50px;
+    margin-right: 10vw;
 }
 
 .navbar-right a {
-    color: #333;
+    color: #d5d0d0;
     text-decoration: none;
+    
 }
 
 .navbar-right a:hover {
@@ -44,7 +47,7 @@ header {
 .banner {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 450px;
     margin-top: 60px; /* Ajuste según la altura del navbar */
     display: flex;
     align-items: center;
@@ -63,17 +66,18 @@ header {
 
 .banner-text {
     position: relative;
-    color: #fff;
+    color: #150202;
     z-index: 1;
 }
 
 .banner-text h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .banner-text p {
     margin: 10px 0;
+    font-size: 1.8rem;
 }
 
 .banner-buttons {
@@ -81,14 +85,27 @@ header {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex; 
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     padding: 10px 20px;
     margin: 0 10px;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #2e1010bb;
+    width: 12vw;
+    height: 8vh;
+    text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1em; 
+    box-sizing: border-box; 
 }
+
+.btn a {
+
+    text-align: center;
+}
+
 
 .btn:hover {
     background-color: #555;
@@ -100,6 +117,7 @@ main {
 
 .gallery {
     padding: 20px;
+    text-align: center;
 }
 
 .gallery-row {
@@ -132,8 +150,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #fff;
-    color: #000;
+    background: #212122;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +177,7 @@ main {
 
 .visit-planner {
     padding: 20px;
+    text-align: center;
 }
 
 .info-row {
